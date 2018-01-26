@@ -3,7 +3,8 @@ def oxford_comma(array)
     array.join
   elsif array.length == 2
     array.join(" and ")
-  elsif array.length == 3
-    array.join(', ') + array[-1] << " and "
+  else
+    fruit = array.pop
+      array.join(", " + ", and #{fruit}")
   end
 end
